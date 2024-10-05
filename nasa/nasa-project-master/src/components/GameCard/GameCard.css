@@ -1,0 +1,68 @@
+.game-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    height: 130px;
+    margin: 1rem;
+    /* padding: 20px; */
+    border-radius: 10px;
+    background: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Slight transparency for modern glassmorphism */
+    backdrop-filter: blur(10px); /* Blurs the background for a glass effect */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Softer shadow for a floating effect */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* Smooth transitions */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+}
+
+/* Hover effects */
+.game-card:hover {
+    transform: scale(1.01); /* Slight lift effect */
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Image styling */
+.game-card-image {
+    margin: 0 !important;
+    width: 130px;
+    height: 130px;
+    object-fit: cover; /* Keeps image ratio intact */
+    transition: opacity 0.3s ease;
+    border: none; /* No borders around the image */
+    border-radius: 10px 0px 0 10px; /* Remove border-radius to eliminate round edges */
+}
+
+/* Content styling */
+.game-card-content {
+    padding: 0 0.6rem 1rem;
+}
+
+/* Title styling */
+.game-card-title {
+    margin: 0.3rem 0 !important;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+/* Description styling */
+.game-card-description {
+    margin: 0 !important;
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Link styling */
+.game-card-link {
+    text-decoration: none;
+}
+
+/* Hover effect for the image */
+.game-card:hover .game-card-image {
+    opacity: 0.9;
+}
